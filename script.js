@@ -17,4 +17,9 @@ $(document).ready(function(){
     $("#result").text("Your product is: " + (num1 * num2));
   });
 
+  $("#newFriend").blur(function(){
+    $("#list").append("<li>" + $("#newFriend").val() + "</li>");
+    console.log($("#newFriend").val());
+  });
+
 });
